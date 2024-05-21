@@ -1,0 +1,56 @@
+#root {
+  max-width: 1280px;
+  margin: 0;
+  text-align: center;
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 200px;
+  margin: 20px;
+  border-radius: 50%;
+  background: whitesmoke;
+  color:black;
+  font-weight: bolder;
+  font-size: x-large;
+  transition: background .2s,
+  width .2s,
+  height .2s,
+  box-shadow .2s;
+
+}
+
+button {
+  margin: 10px;
+  border: none;
+  padding: 10px;
+  border-radius: 6px;
+  transition: .2s;
+}
+button:hover{
+  background: rebeccapurple;
+  transition: .2s;
+}
+button:hover ~ .box{
+  background: #663399;
+  width: 250px;
+  height: 250px;
+  box-shadow: 0px 10px 10px;
+  transition: background .2s,
+  width .2s,
+  height .2s,
+  box-shadow .5s;
+}
+
+.slide{
+  max-width: 300px;
+}
+
+.contentWrapper{
+  padding: 20px;
+  max-height: 100vh;
+  box-sizing: border-box;
+}

@@ -1,0 +1,136 @@
+.container{
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+}
+
+.content{
+  flex-grow: 1;
+  overflow: hidden;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background: #333333;
+  color:aliceblue;
+  text-wrap: nowrap;
+  user-select: none;
+  overflow: hidden;
+}
+
+.title{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 6px;
+  font-size: large;
+  height: 5%;
+}
+
+.icon{
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  height: 24px;
+}
+
+.search{
+  display: flex;
+  align-items: center;
+  margin: 6px;
+  justify-content: space-between;
+  height: 5%;
+}
+.search-bar{
+  border: none;
+  border-radius: 6px;
+  flex-grow: 1;
+  margin-left: 10px;
+  margin-right: 24px;
+}
+.search-bar:focus{
+  outline: none;
+  background-color: rgba(202, 40, 251, 0.445);
+  transition: .5s;
+}
+
+.links{
+  display: flex;
+  flex-direction: column;
+  margin: 6px 0px;
+  gap: 6px;
+  align-items: start;
+  font-size: medium;
+  font-weight: 200;
+}
+
+.link{
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  padding: 6px;
+  box-sizing: border-box;
+  justify-content: space-between;
+}
+.link:hover{
+  background-color: rgba(240, 248, 255, 0.445);
+  border-right: 4px solid white;
+  transition: background-color 0.5s;
+}
+
+.sublink{
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  padding: 6px 6px 6px 20px;
+  box-sizing: border-box;
+  justify-content: space-between;
+}
+.sublink:hover{
+  background-color: rgba(240, 248, 255, 0.445);
+  border-right: 4px solid white;
+  transition: background-color 0.5s;
+}
+
+.link_name{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.active{
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  gap: 10px;
+  padding: 6px;
+  box-sizing: border-box;
+  justify-content: space-between;
+  background-color: rgba(202, 40, 251, 0.445);
+  border-right: 4px solid rgb(220, 107, 255);;
+  transition: background-color 0.5s;
+}
+
+.subactive{
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  gap: 10px;
+  padding: 6px 6px 6px 20px;
+  box-sizing: border-box;
+  justify-content: space-between;
+  background-color: rgba(202, 40, 251, 0.445);
+  border-right: 4px solid rgb(220, 107, 255);;
+  transition: background-color 0.5s;
+}
+
+a{
+  color: white;
+  text-decoration: none;
+}
+
+.burger:hover{
+  color: rgb(108, 0, 141);
+}
